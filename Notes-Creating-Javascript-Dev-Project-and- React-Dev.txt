@@ -438,3 +438,29 @@ Javascript Cheat Sheets
  12: Read more about JavaScript array destructuring
       https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#array_destructuring
 
+=================================================
+13. The Javascript Languahe ECSMA?
+=================================================
+  1. Javascript logical OR operator
+        const [searchTerm, setSearchTerm] = React.useState(
+         localStorage.getItem('search') || 'React'
+        );
+
+      returns the truthy operand in this expression and is short-circuited 
+      if localStorage.getItem('search') returns a truthy value. It's used 
+      as a shorthand for the following implementation for setting 
+      default values:
+       
+      Example:
+         let hasStored;
+            if (localStorage.getItem('search')) {
+              hasStored = true;
+            } else {
+              hasStored = false;
+            }
+            
+            const initialState = hasStored
+            ? localStorage.getItem('search')
+            : 'React';
+
+  2.        
